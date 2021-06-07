@@ -5,7 +5,16 @@ $(document).ready(function() {
     const favFood = $("#fav-food").val();
     const favBand = $("#fav-band").val();
     const favShoes = $("#fav-shoes").val();
-    let favArray = [];
+    let favArray = [favMovie, favFood, favBand, favShoes];
+    let newArray = [];
+
+    newArray.push(favArray[2], favArray[1], favArray[0])
+
+
+    // favArray.push(newArray);
+    console.log(favArray)
+    $("#list").text(newArray);
+
   })
 })
 
